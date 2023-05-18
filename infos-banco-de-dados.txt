@@ -10,3 +10,17 @@ Modelo Entidade-Relacionamento (MER):
     A entidade pode ser definida como um objeto do mundo real, concreto ou abstrato, com existência independente.
 
     Os atributos compõem um conjunto particular de propriedades atreladas à entidade.
+    Exemplo de entidades e atributos:
+        Uma pessoa é uma entidade e as suas características pessoais(Nome, Idade, Peso, Altura, CPF) são seus atributos.
+
+    Os atributos podem ser classificados como:
+       - Atributo simples: não pode ser subdividido; 
+            Ex: CPF é um atributo simples por ser indivisível.
+       - Atributo composto: pode ser dividido em diversas partes, com significados independentes entre si;
+            Ex: Endereço, pois possui sobatributos, como cidade e estado.
+       - Atributo monovalorado: ou simplesmente valorado, só assume um valor em uma determinada instância;
+            Ex: Nome e/ou data_contratação, pois cada um possui um único valor.
+       - Atributo multivalorado: pode assumir diversos valores em uma mesma instância;
+            Ex: Telefone, pois uma pessoa(entidade), pode possuir diversos telefones.
+       - Atributo derivado: é gerado a partir de outro atributo. 
+            Ex: tempo_de_casa, pois um funcionário(entidade) precisou de um atributo data_contratação para tempo_de_casa existir.
