@@ -3,9 +3,9 @@ Modelo Entidade-Relacionamento (MER):
     As entidades são retângulos, atributos são elipses e relacionamentos são losangos.
 
     Os 3 tipos de relacionamentos de entidades:
-        um para um (1, 1)
-        um para muitos (1, n) ou muitos para um (n, 1)
-        muitos para muitos (n, n)
+        um para um (1, 1);
+        um para muitos (1, n) ou muitos para um (n, 1);
+        muitos para muitos (n, n);
     
     A entidade pode ser definida como um objeto do mundo real, concreto ou abstrato, com existência independente.
 
