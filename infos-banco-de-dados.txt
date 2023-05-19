@@ -24,3 +24,33 @@ Modelo Entidade-Relacionamento (MER):
             Ex: Telefone, pois uma pessoa(entidade), pode possuir diversos telefones.
        - Atributo derivado: é gerado a partir de outro atributo. 
             Ex: tempo_de_casa, pois um funcionário(entidade) precisou de um atributo data_contratação para tempo_de_casa existir.
+
+Normalização de esquemas de bancos de dados e formas normais.
+     - Se pensa em um aumento de tabela. (São desmembradas em tabelas mais específicas.)
+     - Pode aumentar o custo de manutenção e comprometer a perfomance.
+     - Deve ser realizada com bom senso, pois apresente melhorias no banco a medio e longo prazo.
+     - É dividida em três formas normais:
+          1 - Primeira Forma Normal (1FN): Não existem grupos de atributos repetidos, suas relações não possuem atributos multivalorados ou relações aninhadas, cada linha deve representar um registro e cada célula deve conter um único valor.
+               Uma tabela 1FN deve estar de acordo com as seguintes informações:
+                    - Os dados devem estar em valores atômicos, ou seja, indivisíveis;                         ter apenas um dado por coluna;
+                    - Deve existir pelo menos uma chave primária;
+                    - Se existirem atributos multivalorados, uma nova tabela será criada;
+                    - Se existirem atributos compostos, eles serão desmembrados em novas colunas de dados.
+          2 - Segunda Forma Normal (2FN): Deve estar, obrigatoriamente, na 1FN. Não deve ter atributos compostos ou multivalorados e nem dependências parciais.
+               Com relação às chaves primarias compostas, a 2FN evige que todas as relações tenham dependência total. Sendo assim:
+               Uma chave primária composta determina funcionalmente os atributos, não podendo existir um atributo que depende de uma parte dessa chave.
+               Na 2FN, os dados:
+                    - Já estão na 1FN;
+                    - A chave primária precisa ser simples.
+          3 - Terceira Forma Normal (3FN): Deve estar, obrigatoriamente, na 2FN e possuir dependência exclusiva da chave primária da tabela.
+               Todos os seus atributos devem ser funcionalmente independentes.
+               Na 3FN, os dados:
+                    - Devem estar na 2FN;
+                    - Os atributos não podem depender de outros que não são chaves.
+          4 - Forma Normal de Boyce-Codd (FNBC):
+               É uma melhoria da 3FN utilizada quando a tabela apresenta mais de uma chave candidata.
+               Serve para separar, em novas tabelas, valores que ainda estejam redundantes no bando de dados.
+               Cada forma normal é estritamente mais forte do que a anterior, então: 
+                    - Toda relação da 2FN encontra-se na 1FN;
+                    - Toda relação na 3FN encontra-se na 2FN.
+                    - Toda relação FNBC está na 3FN.
