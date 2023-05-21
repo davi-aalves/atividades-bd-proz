@@ -54,3 +54,25 @@ Normalização de esquemas de bancos de dados e formas normais.
                     - Toda relação da 2FN encontra-se na 1FN;
                     - Toda relação na 3FN encontra-se na 2FN.
                     - Toda relação FNBC está na 3FN.
+
+Linguagens formais na consulta a banco de dados.
+     Na criação de um banco de dados, o objetivo principal é o armazanamento.
+     Usando as consultas que são implementadas na linguagem SQL, esses dados podem ser recuperados para o usuário ou para a aplicação do banco de dados.
+     
+     Álgebra relacional:
+          A álgebra relacional é uma linguagem de consulta, onde os usuários passam instruções para o sistema executar e o mesmo executa o conjunto de instruções a fim de se obter um resultado desejado pelo usuário. O objetivo das instruções é acessar o banco de dados e coletar a informação que o usuário deseja.
+          Dentro da álgebra relacional temos as seguintes nomeclaturas:
+               - Tuplas: Linhas da tabela.
+               - Atributos: Colunas da tabela.
+               - Relação: A tabela.
+          Tipos de operações:
+               - Select:
+                    Seleciona tuplas das tabelas para atender a uma solicitação e extrair informações.
+                    Sintaxe: sigma<condição da seleção>(<nome da relação>).
+               - Project:
+                    Permite escolher e separar um conjunto determinado de colunas de uma tabela.
+                    Sintaxe: pi<lista de atributos>(<nome da relação>).
+               - Sequencialidade de operações:
+                    Podemos combinar as operações de project e select. Assim, é possível extrair tuplas e colunas ao mesmo tempo.
+                    Sintaxe: pi<lista de atributos>(sigma<condições de seleção>(nome da relação)).
+                    Ex: Consulta 4 = pi nome, depto, salario(sigma salario < 2000(func)).
