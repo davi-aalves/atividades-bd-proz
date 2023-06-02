@@ -76,3 +76,76 @@ Linguagens formais na consulta a banco de dados.
                     Podemos combinar as operações de project e select. Assim, é possível extrair tuplas e colunas ao mesmo tempo.
                     Sintaxe: pi<lista de atributos>(sigma<condições de seleção>(nome da relação)).
                     Ex: Consulta 4 = pi nome, depto, salario(sigma salario < 2000(func)).
+
+     Operações matemáticas:
+          As relações podem ser tratadas como conjuntos, logo, pode-se aplicar operações matemáticas sobre elas.
+          As operações são:
+               - União: representada pelo símbolo U;
+                    O resultado de uma união entre duas tabelas é uma nova tabela que inclui todas as tuplas que estão nas duas tabelas iniciais.
+               - Interseção: representada pelo símbolo ∩;
+                    Retorna uma tabela com apenas o que existem em comum entre as duas primeiras tabelas. 
+               - Diferença:  representada pelo símbolo ≠.
+                    Retorna uma tabela com todos os dados que pertecem a tabela
+          Operações não unárias:
+               Precisam necessariamente de mais de uma relação para acontecer.
+               Atuam em relações compatíveis, ou seja, que possuem o mesmo grau ou mesmo número de atributos que têm o mesmo domínio.
+
+SGBD's:
+     O que podemos fazer através de um SGBD:
+          - Criar relações entre tabelas.
+          - Copiar e eliminar arquivos.
+          - Alterar as estruturas dos campos.
+          - Criar e gerir usuários.
+          - Importar e exportar dados.
+
+     Tipos de SGBDS:
+          - Oracle:
+               Um dos mais utulizados atualmente nas aplicações corporativas.
+               Utiliza a linguagem PLSQL.
+               Função: Acelerar o tratamento e a persistência dos dados.
+               Seguro, confiável, robusto e de alta qualidade.
+
+          - MySQL:
+               Muito popular, usado principalmente na internet.
+               Projetos simples e complexos.
+               Utiliza linguagem SQL.
+               Licença paga e gratuita.
+               Utilizado pela NASA, Bradesco e Youtube...
+          
+          - SQL Server:
+               Criado e mantido pela Microsoft.
+               Robusto e atende uma demanda de negócios simples e complexos.
+               Grandes volumes de dados.
+               Utiliza a aplicação de inteligência artificial, proporcionando detecções mais certeiras de tendências e comportamentos por meio de dados.
+          
+          - Postgre SQL:
+               Código aberto.
+               Executada pela linguagem PSQL.
+               Suporta grande parte do padrão SQL.
+               Oferece muitos recursos modernos:
+                    - Consultas complexas.
+                    - Chaves estrangeiras.
+                    - Gatilhos.
+                    - Visualizações atualizáveis.
+                    - Integridade transacional.
+                    - Controle multiversão.
+
+          - Firebird:
+               Código aberto.
+               Atende tanto clientes como servidores.
+               Compartibilidade com o padrão SQL-92.
+               Funciona em mais de 10 S.O.
+               Desenvolvido do código-fonte do interbase 6.
+          
+          MariaDB:
+               Código aberto.
+               Construído pelos desenvolvedores do MySQL.
+               Diferença entre MariaDB para o MySQL:
+                    - Lincença GPL ou licença de software livre.
+                    - O MySQL possui dupla licença: paga e gratuita.
+          
+          MongoDB:
+               Orientado a documentos.
+               Armazena seus registros sem nenhuma preocupação com a estrutura dos dados.
+               Banco de dados NoSQL:
+                    - Seus dados não são armazenados em tabelas.
